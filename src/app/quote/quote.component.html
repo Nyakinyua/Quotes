@@ -1,40 +1,10 @@
-<div class="jumbotron">
-        <hr>
-        <h2>Quotes</h2>
-        
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card-body">
-              <div *ngFor="let myQuote of sortQuotes; let i = index">
-              
-                <h5 class="card-title"> {{ Quotes.name }} </h5>
-                
-                
-                <div class="card-text">
-                  <button (click)="toggleDetails(i)">Toggle Details</button>
-                  <app-quote-detail *ngIf="myQuote.showQuote" [quote]="myQuote" (isComplete)="deleteQuote($event, i)"></app-quote-detail>
-                  <!--    <app-quote-detail [quote]="myQuote"></app-quote-detail>-->
-                  
-                  <app-voting [quotes]="myQuote" *ngIf="myQuote.showQuote" (isUpVoted)="upvoteQuote($event, i)" (isDownVoted)="downvoteQuote($event, i)"></app-voting>
-                  
-                </div>
-              
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            
-            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-        
-            <div class="jumbotron">
-              <div class="card-title">
-            
-                <p>The quote with the most votes is: {{quotes[0].name}}</p>
-                <p> {{quotes[0].quoteText}}</p>
-              </div>
-              
-          </div>
-        
-          
-        </div>
-      </div>
+<div>
+    <h1>My Quotes</h1>
+    <hr>
+    <ul>
+      <div *ngFor='let quote of quote; let i=index'>
+        {{quote.name}}
+        <app-quote-detail [quote]='quote'></app-quote-detail>
+      </li>
+    </ul>
+  </div>
