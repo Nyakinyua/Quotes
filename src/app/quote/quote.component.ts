@@ -10,6 +10,10 @@ export class QuoteComponent implements OnInit {
     new Quote(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
     new Quote(2,'Buy Cookies','I have to buy cookies for the parrot'),
   ]
+
+  toggleDetails(index){
+    this.quote[index].showDescription = !this.quote[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit() {
