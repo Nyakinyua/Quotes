@@ -1,15 +1,19 @@
 <div class="jumbotron">
     <div class="row">
         <div class="col-md-6">
-    <h1>My Quotes</h1>
-    <hr>
-    <ul>
-      <div *ngFor='let quote of quote; let i=index'>
-       <li> {{quote.name}} created on {{quote.dateCreated|date}}</li>
-       <button (click)='toggleDetails(i)' class="btn btn-success">Show Details</button>
-        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (iscomplete)='deleteQuote($event,i)'></app-quote-detail>
-      </div>
-    </ul>
-</div>
-</div>
+            <h1>The Quotes</h1>
+            <hr>
+            <ul>
+                <div *ngFor='let quote of quote; let i=index'>
+                    <li> {{quote.name}} created on {{quote.dateCreated|date}}</li>
+                    <button (click)='toggleDetails(i)' class="btn btn-success">Show Details</button>
+                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'
+                        (iscomplete)='deleteQuote($event,i)'></app-quote-detail>
+                </div>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <app-quote-form></app-quote-form>
+        </div>
+    </div>
 </div>
