@@ -3,11 +3,11 @@
 
         constructor( public id:number,
                      public name: string, 
-                     public QuoteText:string,
+                     public quoteText:string,
                      public author:string,
                      public quoteSubmitter:string, 
-                     public upVote: number=0,
-                     public downVote: number=0,
+                     public quoteUpVote: number=0,
+                     public quoteDownVote: number=0,
 
                      public dateCreated:Date) {
 

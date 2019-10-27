@@ -28,16 +28,15 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-
-  upvoteQuote(isUpVoted, index,) {
+  upvoteQuote(isUpVoted, index) {
     if (isUpVoted) {
-      this.quote[index].upVote ++;
+      this.quote[index].quoteUpVote ++;
     }
   }
 
   downvoteQuote(isDownVoted, index) {
     if (isDownVoted) {
-      this.quote[index].downVote ++;
+      this.quote[index].quoteDownVote ++;
     }
   }
 

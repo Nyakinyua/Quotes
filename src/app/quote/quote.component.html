@@ -4,12 +4,12 @@
             <h1>The Quotes</h1>
             <hr>
 
-
+<!-- <div *ngFor="let myQuote of sortQuotes; let i = index">-->
             <ul>
                 <div *ngFor='let quote of quote; let i=index'>
                     <li> {{quote.name}} created on {{quote.dateCreated|date}}</li>
                     <button (click)='toggleDetails(i)' class="btn btn-success">Show Details</button>
-                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'
+                    <app-quote-detail *ngIf='quote.showDescription' [quote]='Quote'
                         (isComplete)='deleteQuote($event,i)'></app-quote-detail><br><br>
                    
                   <!-- <app-quote-detail *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event, i)"></app-quote-detail>-->
@@ -22,4 +22,11 @@
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>
     </div>
+
+  <!--  <div class="jumbotron">
+        <div class="card-title">
+      
+          <p>The quote with the most votes is: {{quotes[0].name}}</p>
+          <p> {{quotes[0].quoteText}}</p>
+        </div>-->
 </div>
