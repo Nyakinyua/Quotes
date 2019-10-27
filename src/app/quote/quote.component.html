@@ -4,16 +4,19 @@
             <h1>The Quotes</h1>
             <hr>
 
-            
-             <ul>
+
+            <ul>
                 <div *ngFor='let quote of quote; let i=index'>
                     <li> {{quote.name}} created on {{quote.dateCreated|date}}</li>
                     <button (click)='toggleDetails(i)' class="btn btn-success">Show Details</button>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'
-                        (iscomplete)='deleteQuote($event,i)'></app-quote-detail>
-                <app-vote ></app-vote>
+                        (isComplete)='deleteQuote($event,i)'></app-quote-detail><br><br>
+                   
+                  <!-- <app-quote-detail *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event, i)"></app-quote-detail>-->
+                        <app-vote [quote]='quote' (upVote)="upVote($event)" (downVote)="upVote($event)"></app-vote>
+
                 </div>
-            </ul> 
+            </ul>
         </div>
         <div class="col-md-6">
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>

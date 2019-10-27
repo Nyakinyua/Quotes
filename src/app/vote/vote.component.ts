@@ -13,11 +13,11 @@ export class VoteComponent implements OnInit {
   @Output() isUpVoted = new EventEmitter<boolean>();
   @Output() isDownVoted = new EventEmitter<boolean>();
 
-  quoteUpVote(upvote: boolean) {
+  quoteupVote(upvote: boolean) {
     this.isUpVoted.emit(upvote);
   }
 
-  quoteDownVote(downvote: boolean) {
+  quotedownVote(downvote: boolean) {
     this.isDownVoted.emit(downvote);
   }
   constructor() { }
