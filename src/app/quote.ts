@@ -6,7 +6,9 @@
                      public QuoteText:string,
                      public author:string,
                      public quoteSubmitter:string, 
-                    
+                     public upVote: number=0,
+                     public downVote: number=0,
+
                      public dateCreated:Date) {
 
         this.showDescription= false;
