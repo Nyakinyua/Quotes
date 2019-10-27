@@ -7,7 +7,7 @@
 <!-- <div *ngFor="let myQuote of sortQuotes; let i = index">-->
             <ul>
                 <div *ngFor='let quote of quote; let i=index'>
-                    <li> {{quote.name}} created on {{quote.dateCreated|date}}</li>
+                    <li class="card-text"> {{quote.name}} created on {{quote.dateCreated|date}}</li>
                     <button (click)='toggleDetails(i)' class="btn btn-success">Show Details</button>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='Quote'
                         (isComplete)='deleteQuote($event,i)'></app-quote-detail><br><br>
