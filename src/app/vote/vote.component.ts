@@ -20,6 +20,8 @@ export class VoteComponent implements OnInit {
   quoteDownVote(downvote: boolean) {
     this.isDownVoted.emit(downvote);
   }
+
+  
   constructor() { }
 
   ngOnInit() {

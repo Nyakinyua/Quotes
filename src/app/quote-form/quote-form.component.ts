@@ -16,7 +16,9 @@ export class QuoteFormComponent implements OnInit {
       
     }
 
-    
+  //   onSubmit(quoteForm: Quote) {
+  //   quoteForm.resetForm();
+  // }    
     constructor() { }
 
   ngOnInit() {
