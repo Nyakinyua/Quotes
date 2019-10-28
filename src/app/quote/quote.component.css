@@ -1,8 +1,9 @@
-.card-body{
-    background-image: url("https://www.brainyquote.com/photos_tr/bg_thumbnails/bg_0351.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:white;
+.container-fluid{
     font-weight: bolder;
     font-family: 'Itim', cursive;
 }
+.card-body{
+    padding: 30px;
+    
+}
+

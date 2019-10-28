@@ -4,4 +4,8 @@ input[type=text]:focus {
   input[type=submit]:hover {
     background-color: #45a049;
   }
+  .card-body{
+    font-weight: 800;
+    
+  }
  

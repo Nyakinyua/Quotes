@@ -7,10 +7,10 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quote:Quote[] = [
-    new Quote(1, 'All you need is love. But a little chocolate now and then does not hurt', 'Charles M. Schulz','Mariam',10,5 ,new Date(2019,10,12)),
-    new Quote(2,'Lord, grant that I might not so much seek to be loved as to love','Francis of Assisi','Joy',2,5,new Date (2017,3,14)),
-    new Quote(3,"I like the night Without the dark, we'd never see the stars" ,'Ritu Ghatourey','Rose',3,1, new Date(2019,10,25)),
-    new Quote(4,'From now on, ending a sentence with a preposition is something up with which I will not put','Winston Churchill','Sheila',2,6, new Date(2019,12,10) )
+    new Quote(1, 'All you need is love. But a little chocolate now and then does not hurt', 'Charles M. Schulz','Mariam',1,5 ,new Date(2019,1,12)),
+    new Quote(2,'Lord, grant that I might not so much seek to be loved as to love','Francis of Assisi','Joy',0,0,new Date (2017,3,14)),
+    new Quote(3,"I like the night Without the dark, we'd never see the stars" ,'Ritu Ghatourey','Rose',3,1, new Date(2019,1,25)),
+    new Quote(4,'From now on, ending a sentence with a preposition is something up with which I will not put','Winston Churchill','Sheila',0,6, new Date(2019,11,10) )
   ];
 
   get sortQuotes() {

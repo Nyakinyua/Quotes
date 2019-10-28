@@ -3,6 +3,8 @@ h1, h2 {
 font-weight: bolder;
 font-size-adjust: inherit;
 font-size:60;
+font-family: 'Itim', cursive;
+
 
 }
  /* {
@@ -25,6 +27,8 @@ li {
     border-right: none;
   }
 
-
-
-
+  body{
+    background-image: url("https://images.pexels.com/photos/1037999/pexels-photo-1037999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size:cover;
+}   

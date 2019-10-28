@@ -1,4 +1,6 @@
-# Quotes
+# Quotes by [Nyakinyua](https://github.com/Nyakinyua/Quotes)
+This is a web application that displays various famous quotes written by different authors. It also allows user to upvote or downvote a quote. The user is also able to add a quote of their choosing to the website. 
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
@@ -14,14 +16,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## License
+This work is licensed by CC Share Alike. Copyright (c) 2019
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

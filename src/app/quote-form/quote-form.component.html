@@ -1,5 +1,6 @@
-<div class="card-body">
-    <h2 class="text-center">Create a new Quote</h2>
+<div class="container-fluid">
+<div class="card-body" >
+    <h2 class="text-center">Add a new Quote</h2>
     <hr>
     <!--<form (ngSubmit)="submitQuote()" #quoteForm='ngForm'>-->
             <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
@@ -37,14 +38,12 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="create">Date</label>
-            <input type='date' id="create" [(ngModel)]="newQuote.dateCreated" name="dateCreated" #dateCreated='ngModel'
-                required>
-            <div [hidden]="dateCreated.valid || dateCreated.pristine" class="alert alert-danger">
-                <p>Date required</p>
-            </div>
-        </div>
         <button type="submit" class="btn btn-success">Add Quote</button>
+        <button type="reset" class="btn btn-success" >Reset?</button>
     </form>
+</div><br><br>
+<img src="https://images.pexels.com/photos/262465/pexels-photo-262465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280">
+<img src="https://images.pexels.com/photos/6307/desk-white-design-quote.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280"><br>
+<img src="https://images.pexels.com/photos/888992/pexels-photo-888992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280">
+<img src="https://images.pexels.com/photos/1485657/pexels-photo-1485657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280">
 </div>

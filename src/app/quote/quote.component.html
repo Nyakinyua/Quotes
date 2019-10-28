@@ -1,21 +1,24 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
-            <h1>The Quotes</h1>
+            <h2>The Quotes</h2>
             <hr>
-<!--Get sorted array-->
+            <!--highlight quote with highest votes-->
+            <p appHighlight>{{quote[0].quoteText}} </p>
+            <!--Get sorted array-->
             <ol>
                 <div *ngFor='let quote of sortQuotes; let i=index'>
-                    <p appHighlight>{{quote.quoteText}}</p>
-   
-                    <li  class="card-body">  {{quote.quoteText}}  created on {{quote.dateCreated|date}}</li>
-                    <button (click)='toggleDetails(i)' class="btn btn-success" >Show Details</button>
+
+
+                 <li class="card-text"  style="max-width: 18rem;"> {{quote.quoteText}} created on {{quote.dateCreated|date}}</li>
+                    <button (click)='toggleDetails(i)' class="btn btn-success">Show Details</button>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'
                         (isComplete)='deleteQuote($event,i)'></app-quote-detail><br><br>
-                   
-                  <!-- <app-quote-detail *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event, i)"></app-quote-detail>-->
-                        <app-vote [quote]='quote' (isUpVoted)="upVoteQuote($event,i)" (isDownVoted)=" downVoteQuote($event,i)"></app-vote>
-                        
+
+                    <!-- <app-quote-detail *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event, i)"></app-quote-detail>-->
+                    <app-vote [quote]='quote' (isUpVoted)="upVoteQuote($event,i)"
+                        (isDownVoted)=" downVoteQuote($event,i)"></app-vote>
+
                 </div>
             </ol>
         </div>
@@ -24,7 +27,7 @@
         </div>
     </div>
 
-   
-      
-         
+
+
+
 </div>
