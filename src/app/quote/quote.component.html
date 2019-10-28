@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
             <h1>The Quotes</h1>
@@ -6,6 +6,7 @@
 <!--Get sorted array-->
             <ol>
                 <div *ngFor='let quote of sortQuotes; let i=index'>
+   
                     <li class="card-body"> {{quote.name}}  {{quote.quoteText}}  created on {{quote.dateCreated|date}}</li>
                     <button (click)='toggleDetails(i)' class="btn btn-success" >Show Details</button>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'

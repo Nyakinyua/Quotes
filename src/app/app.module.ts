@@ -20,6 +20,7 @@ import { HighlightDirective } from './highlight.directive';
     VoteComponent,
     HighlightDirective,
     
+    
   ],
   imports: [
     BrowserModule,

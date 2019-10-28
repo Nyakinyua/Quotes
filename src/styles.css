@@ -1,3 +1,4 @@
+
 h1, h2 {
 font-weight: bolder;
 font-size-adjust: inherit;
@@ -13,4 +14,10 @@ li {
   li:last-child {
     border-right: none;
   }
+body{
+    background-image: url("https://images.pexels.com/photos/3044608/pexels-photo-3044608.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
