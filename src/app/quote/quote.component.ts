@@ -13,7 +13,11 @@ export class QuoteComponent implements OnInit {
     new Quote(4,'From now on, ending a sentence with a preposition is something up with which I will not put','Winston Churchill','Sheila','Alicia',2,6, new Date(2019,12,10) )
   ];
 
-   
+  get sortQuotes() {
+    return this.quote.sort((a, b) => {
+       return (b.quoteUpVote) as any  - (a.quoteUpVote) as any;
+     });
+  }
 
   toggleDetails(index){
     this.quote[index].showDescription = !this.quote[index].showDescription;
@@ -48,12 +52,6 @@ export class QuoteComponent implements OnInit {
       this.quote.push(quote)
     }
 
-   
-
-    //  get sortQuotes() {
-    //   return this.quote.sort((a, b) => {
-    //      return (b.quoteUpVote) as any  - (a.quoteUpVote) as any;
-    //    })
   constructor() { }
 
   ngOnInit() {
