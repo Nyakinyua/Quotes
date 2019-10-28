@@ -4,12 +4,12 @@
             <h1>The Quotes</h1>
             <hr>
 
-<!-- <div *ngFor="let myQuote of sortQuotes; let i = index">-->
+<!-- <div *ngFor="let Quote of sortQuotes; let i = index">-->
             <ol>
                 <div *ngFor='let quote of quote; let i=index'>
-                    <li class="card-body"> {{quote.name}} created on {{quote.dateCreated|date}}</li>
+                    <li class="card-body"> {{quote.name}}  {{quote.quoteText}} {{quote.author}}created on {{quote.dateCreated|date}}</li>
                     <button (click)='toggleDetails(i)' class="btn btn-success">Show Details</button>
-                    <app-quote-detail *ngIf='quote.showDescription' [quote]='Quote'
+                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'
                         (isComplete)='deleteQuote($event,i)'></app-quote-detail><br><br>
                    
                   <!-- <app-quote-detail *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event, i)"></app-quote-detail>-->

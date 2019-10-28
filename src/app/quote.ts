@@ -3,7 +3,7 @@
 
         constructor( public id:number,
                      public name: string, 
-                     public QuoteText:string,
+                     public quoteText:string,
                      public author:string,
                      public quoteSubmitter:string, 
                      public quoteUpVote: number=0,
