@@ -5,18 +5,18 @@
             <hr>
 
 <!-- <div *ngFor="let myQuote of sortQuotes; let i = index">-->
-            <ul>
+            <ol>
                 <div *ngFor='let quote of quote; let i=index'>
-                    <li class="card-text"> {{quote.name}} created on {{quote.dateCreated|date}}</li>
+                    <li class="card-body"> {{quote.name}} created on {{quote.dateCreated|date}}</li>
                     <button (click)='toggleDetails(i)' class="btn btn-success">Show Details</button>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='Quote'
                         (isComplete)='deleteQuote($event,i)'></app-quote-detail><br><br>
                    
                   <!-- <app-quote-detail *ngIf="quote.showDescription" [quote]="quote" (isComplete)="deleteQuote($event, i)"></app-quote-detail>-->
-                        <app-vote [quote]='quote' (isUpVoted)="upVoteQuote($event,i)" (isDownVoted)=" downVoteQuote($event,i)"></app-vote>-->
+                        <app-vote [quote]='quote' (isUpVoted)="upVoteQuote($event,i)" (isDownVoted)=" downVoteQuote($event,i)"></app-vote>
                         
                 </div>
-            </ul>
+            </ol>
         </div>
         <div class="col-md-6">
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
