@@ -29,13 +29,13 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  upvoteQuote(isUpVoted, index) {
+  upVoteQuote(isUpVoted, index) {
     if (isUpVoted) {
       this.quote[index].quoteUpVote ++;
     }
   }
 
-  downvoteQuote(isDownVoted, index) {
+  downVoteQuote(isDownVoted, index) {
     if (isDownVoted) {
       this.quote[index].quoteDownVote ++;
     }
@@ -48,10 +48,12 @@ export class QuoteComponent implements OnInit {
       this.quote.push(quote)
     }
 
-    // get sortQuotes() {
+   
+
+    //  get sortQuotes() {
     //   return this.quote.sort((a, b) => {
-    //     return (b.quoteUpVote) as any  - (a.quoteUpVote) as any;
-    //   })
+    //      return (b.quoteUpVote) as any  - (a.quoteUpVote) as any;
+    //    })
   constructor() { }
 
   ngOnInit() {

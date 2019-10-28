@@ -3,3 +3,15 @@ font-weight: bolder;
 font-size-adjust: inherit;
 
 }
+li {
+    border-right: 1px solid #bbb;
+    color: black;
+    font-weight: 900;
+    text-align-last: right;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+
+  
