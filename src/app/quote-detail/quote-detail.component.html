@@ -1,4 +1,4 @@
-<p>This Quote was created by{{quote.author + quote.quoteSubmitter}}</p>
+<p>This Quote was created by {{quote.author}} and submitted by  {{quote.quoteSubmitter}}</p>
 <p> {{quote.dateCreated|dateCount}} days ago</p>
 
 <button (click)='quoteDelete(true)' class="btn btn-warning">Delete Quote</button>

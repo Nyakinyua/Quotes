@@ -5,21 +5,13 @@
             <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
 
 
-        <div class="form-group">
-            <label for="name">Qoute name</label>
-            <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel'
-                required>
-            <!-- error checking-->
-            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                <p>Name is required</p>
-            </div>
-        </div>
+     
 
         <div class="form-group">
-            <label for="name">Qoute Text</label>
+            <label for="name">Quote Text</label>
             <input type="text" class="form-control" id="text" [(ngModel)]="newQuote.quoteText" name="text"
                 #text='ngModel' required>
-            <!-- error checking-->
+            <!-- verify quote-->
             <div [hidden]="text.valid || text.pristine" class="alert alert-danger">
                 <p>The Quote text is required</p>
             </div>
@@ -29,7 +21,7 @@
             <label for="name">Quote Author</label>
             <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author"
                 #author='ngModel' required>
-            <!-- error checking-->
+            <!-- Author-->
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
                 <p>The Quote's Author text is required</p>
             </div>
@@ -39,7 +31,7 @@
             <label for="name">Quote Submitter</label>
             <input type="text" class="form-control" id="submitter" [(ngModel)]="newQuote.quoteSubmitter"
                 name="submitter" #submitter='ngModel' required>
-            <!-- error checking-->
+            <!-- submitted by-->
             <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
                 <p>The Quote's Submitter is required</p>
             </div>

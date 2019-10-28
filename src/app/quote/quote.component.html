@@ -6,8 +6,9 @@
 <!--Get sorted array-->
             <ol>
                 <div *ngFor='let quote of sortQuotes; let i=index'>
+                    <p appHighlight>{{quote.quoteText}}</p>
    
-                    <li class="card-body"> {{quote.name}}  {{quote.quoteText}}  created on {{quote.dateCreated|date}}</li>
+                    <li  class="card-body">  {{quote.quoteText}}  created on {{quote.dateCreated|date}}</li>
                     <button (click)='toggleDetails(i)' class="btn btn-success" >Show Details</button>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'
                         (isComplete)='deleteQuote($event,i)'></app-quote-detail><br><br>

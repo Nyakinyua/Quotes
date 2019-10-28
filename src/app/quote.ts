@@ -2,7 +2,6 @@
         showDescription: boolean;
 
         constructor( public id:number,
-                     public name: string, 
                      public quoteText:string,
                      public author:string,
                      public quoteSubmitter:string, 
