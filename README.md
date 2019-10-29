@@ -1,20 +1,27 @@
-# Quotes by [Nyakinyua](https://github.com/Nyakinyua/Quotes)
+# Quotes 
+click [here](https://nyakinyua.github.io/Quotes/) to view webpage
+
+## Description
 This is a web application that displays various famous quotes written by different authors. It also allows user to upvote or downvote a quote. The user is also able to add a quote of their choosing to the website. 
-
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
-## Development server
+
+## Authors Information
+Name: Nyakinyua
+Telephone: +254721317715
+[Nyakinyua](https://github.com/Nyakinyua/Quotes)
+
+## Set-up Instructions
+* Internet enabled device
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Technologies Used
+* Typescript
+* Angular CLI
+* Bootstrap
+* Css Stylesheet
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## License
 This work is licensed by CC Share Alike. Copyright (c) 2019
