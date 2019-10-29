@@ -1,49 +1,77 @@
 <div class="container-fluid">
-<div class="card-body" >
-    <h2 class="text-center">Add a new Quote</h2>
-    <hr>
-    <!--<form (ngSubmit)="submitQuote()" #quoteForm='ngForm'>-->
-            <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <div class="card-body">
+        <h2 class="text-center">Add a new Quote</h2>
+        <hr>
+        <!--<form (ngSubmit)="submitQuote()" #quoteForm='ngForm'>-->
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
 
 
-     
 
-        <div class="form-group">
-            <label for="name">Quote Text</label>
-            <input type="text" class="form-control" id="text" [(ngModel)]="newQuote.quoteText" name="text"
-                #text='ngModel' required>
-            <!-- verify quote-->
-            <div [hidden]="text.valid || text.pristine" class="alert alert-danger">
-                <p>The Quote text is required</p>
+
+            <div class="form-group">
+                <label for="name">Quote Text</label>
+                <input type="text" class="form-control" id="text" [(ngModel)]="newQuote.quoteText" name="text"
+                    #text='ngModel' required>
+                <!-- verify quote-->
+                <div [hidden]="text.valid || text.pristine" class="alert alert-danger">
+                    <p>The Quote text is required</p>
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="name">Quote Author</label>
-            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author"
-                #author='ngModel' required>
-            <!-- Author-->
-            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-                <p>The Quote's Author text is required</p>
+            <div class="form-group">
+                <label for="name">Quote Author</label>
+                <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author"
+                    #author='ngModel' required>
+                <!-- Author-->
+                <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                    <p>The Quote's Author text is required</p>
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="name">Quote Submitter</label>
-            <input type="text" class="form-control" id="submitter" [(ngModel)]="newQuote.quoteSubmitter"
-                name="submitter" #submitter='ngModel' required>
-            <!-- submitted by-->
-            <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
-                <p>The Quote's Submitter is required</p>
+            <div class="form-group">
+                <label for="name">Quote Submitter</label>
+                <input type="text" class="form-control" id="submitter" [(ngModel)]="newQuote.quoteSubmitter"
+                    name="submitter" #submitter='ngModel' required>
+                <!-- submitted by-->
+                <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
+                    <p>The Quote's Submitter is required</p>
+                </div>
             </div>
-        </div>
 
-        <button type="submit" class="btn btn-success">Add Quote</button>
-        <button type="reset" class="btn btn-success" >Reset?</button>
-    </form>
-</div><br><br>
-<img src="https://images.pexels.com/photos/262465/pexels-photo-262465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280">
-<img src="https://images.pexels.com/photos/6307/desk-white-design-quote.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280"><br>
-<img src="https://images.pexels.com/photos/888992/pexels-photo-888992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280">
-<img src="https://images.pexels.com/photos/1485657/pexels-photo-1485657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="280">
+            <button type="submit" class="btn btn-success">Add Quote</button>
+            <button type="reset" class="btn btn-success">Reset?</button>
+        </form>
+    </div><br><br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://images.pexels.com/photos/262465/pexels-photo-262465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                width="280" class ="quote">
+                <div class="middle">
+                        <div class="text">Hannah Bronfman</div>
+                      </div>
+        </div>
+        <div class="col-md-6">
+            <img src="https://images.pexels.com/photos/6307/desk-white-design-quote.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                width="280" class ="quote"><br>
+                <div class="middle">
+                        <div class="text">Pablo Picasso</div>
+                      </div>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://images.pexels.com/photos/888992/pexels-photo-888992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                width="280" class ="quote">
+                <div class="middle">
+                        <div class="text">R. Buckminster Fuller</div>
+                      </div>
+        </div>
+        <div class="col-md-6">
+            <img src="https://images.pexels.com/photos/1485657/pexels-photo-1485657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                width="280" class ="quote">
+                <div class="middle">
+                        <div class="text">Adam Smith</div>
+                      </div>
+        </div>
+    </div>
 </div>
